@@ -9,19 +9,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 1000px;
     margin: auto;
+    border: 1px solid rgba(187, 186, 186, 0.493);
 }
 
 header {
     background-color: #F97270; 
-    padding: 30px;
+    padding: 30px 0px;
     width: 100%;
     display: inline-flex;
+    border: 1px solid rgba(0, 0, 0, 0.308);
 }
 
-header h1 {
-    color: white;
-    font-size: 25px;
-    padding: 0px 400px 0px 60px;
+header img {
+    width: 120px;
+    height: 30px;
+    padding: 0px 300px 0px 100px;
 }
 
 header a {
@@ -34,20 +36,22 @@ header a {
 
 div#intro {
     padding: 120px 10px 120px 120px;
+    display: inline-flex;
 }
 
-div#intro p#title {
+div#intro .title {
+    padding-right: 50px;
     font-size: 40px;
     line-height: 50px;
 }
 
-div#intro p#text {
-    padding: 10px 0px 50px 0px;
+div#intro .text {
+    padding: 10px 50px 50px 0px;
     color: rgb(102, 101, 101);
     font-weight: bold;
 }
 
-.more {
+div#intro .more {
     color: white;
     text-decoration: none;
     background-color: #F97270;
@@ -56,46 +60,55 @@ div#intro p#text {
     font-weight: bold;
 }
 
+div#introsub {
+    display: block;
+}
+
 div#about-us {
-    padding-top: 100px;
-    text-align: center;
+    padding: 100px 0px 0px 100px;
+    display: inline-flex;
+}
+
+div#about-us .about-ussub {
+    display: block;
 }
 
 .h2us {
     font-size: 20px;
     color: #F97270;
-    padding-bottom: 80px;
     font-weight: 100;
     text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.205);
+    text-align: center;
 }
 
-.h2strong {
+div#about-us .h2strong {
     font-size: 16px;
     color: black;
-    padding-bottom: 20px;
+    padding: 15px 0px 20px 100px;
+    line-height: 25px;
 }
 
-.lorem {
+div#about-us .text {
+    margin-bottom: 50px;
     font-size: 16px;
-    padding-bottom: 50px;
+    padding: 0px 200px 0px 100px;
+    line-height: 25px;
 }
 
-.cv {
+div#about-us .cv {
+    margin-left: 100px;
     font-size: 12px;
     color: white;
     text-decoration: none;
     background-color: #F97270;
-    padding: 10px 30px 10px 30px;
+    padding: 20px 30px 20px 30px;
     border-radius: 10px;
     font-weight: 100;
 }
 
-div#services {
-    padding-top: 100px;
-    text-align: center;
-}
-
 .h2services {
+    margin-top: 150px;
+    text-align: center;
     font-size: 20px;
     color: #F97270;
     padding-bottom: 30px;
@@ -104,58 +117,217 @@ div#services {
 }
 
 .pservices {
+    color: #151D41;
+    text-align: center;
     font-size: 30px;
     font-weight: bolder;
-    padding-bottom: 80px;
 }
 
-.design {
-    width: 50%;
+div#services {
+    padding-top: 80px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+div#design {
+    display: inline-flex;
+}
+
+div#design .design1 {
+    width: 30%;
     height: 50px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.288);
-    margin-bottom: 50px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.11);
+    margin: 0px 50px 50px 0px;
     padding: 50px 50px 100px 50px;
+    display: block;
 }
 
-.design2 {
+div#design .design2 {
     width: 30%;
     height: 230px;
     background-color: #F97270;;
     margin-bottom: 50px;
-    padding: 40px 40px 130px 40px;
+    padding: 40px 40px 150px 40px;
     border-radius: 5px;
+    display: block;
 }
 
-.title1 {
+.design1 .title1 {
     padding-bottom: 10px;
 }
 
-.subtitle1 {
+.design1 .subtitle1 {
     padding-bottom: 10px;
 }
 
-.p1 {
+.design1 .p1 {
     color: gray;
     padding-bottom: 10px;
 }
 
-.subtitle2 {
+.design2 .subtitle2 {
     color: white;
     padding: 20px 0px 30px 0px;
 }
 
-.p2 {
+.design2 .p2 {
     color: white;
     padding-bottom: 30px;
     line-height: 30px;
 }
 
-.more2 {
+.design2 .more2 {
     color: black;
     text-decoration: none;
     background-color: white;
     padding: 10px 30px 10px 30px;
     font-weight: 100;
+}
+
+.porttext {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #F97270;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.205);
+}
+
+.portp {
+    color: #151D41;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+ul#templates {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0px 30px 100px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#templates li {
+    float: left;
+    width: 180px;
+    height: 220px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
+    -webkit-transition: all 0.2s ease-in;
+}
+
+ul#templates li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+    line-height: 370px;
+    padding: 2px;
+}
+
+ul#templates li:hover {
+    -webkit-transform: scale(1.2);
+}
+
+ul#templates span:hover {
+    opacity: 1;
+}
+
+ul#templates li#github {
+    background: url(imagens/img1.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 400px;
+    background-color: white;
+}
+
+ul#templates li#github:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#templates li#linkedin {
+    background: url(imagens/img2.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 400px;
+    background-color: white;
+}
+
+ul#templates li#linkedin:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#templates li#social {
+    background: url(imagens/img3.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 400px;
+    background-color: white;
+}
+
+ul#templates li#social:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#templates li#website {
+    background: url(imagens/img4.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 400px;
+    background-color: white;
+}
+
+ul#templates li#website:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+.contacttext {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #F97270;
+    padding-bottom: 30px;
+    font-weight: 100;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.205);
+}
+
+.pmesage {
+    color: #151D41;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+div#contact {
+    margin: 0px 200px 50px 200px;
+}
+
+.items {
+    display: inline-flex;
+}
+
+.formitem {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.cTel {
+    padding: 15px;
+    margin: 0px 20px 20px 0px;
+    border: 1px solid black;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bolder;
 }

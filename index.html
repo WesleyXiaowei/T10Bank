@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>T10 Bank</h1>
+        <img src="imagens/t10bank2.png" alt="logo">
         <nav>
             <a href="#">Home</a>
             <a href="#">Sobre nós</a>
@@ -20,47 +20,66 @@
     </header>
     <main>
         <div id="intro">
-            <p id="title">Inovação, Design e <br><strong>Experiência</strong></p>
-            <p id="text">Sempre a frente em soluções digitais</p>
-            <a href="#" class="more">Saiba mais</a>
+            <div id="introsub">
+                <p class="title">Inovação, Design e <br><strong>Experiência</strong></p>
+                <p class="text">Sempre a frente em soluções digitais</p>
+                <a href="#" class="more">Saiba mais</a>
+            </div>
             <img src="imagens/imagem.jpg" alt="eximagem">
         </div>
-        <div id="about-us">
+        <div>
             <h2 class="h2us">SOBRE NÓS</h2>
+        </div>
+        <div id="about-us">
             <img src="imagens/imagem2.jpg" alt="eximagem2">
-            <h2 class="h2strong">Qual o seu próximo projeto?</h2>
-            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, impedit sapiente minus libero voluptate ipsa dolorum incidunt doloremque, explicabo deleniti dolore voluptatem voluptates perferendis vitae temporibus quia cum voluptas vero!</p>
-            <a href="#" class="cv">Download CV</a>
+            <div class="about-ussub">
+                <h2 class="h2strong">Qual o seu próximo <br>projeto?</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, impedit sapiente minus libero voluptate ipsa dolorum incidunt doloremque, explicabo deleniti dolore voluptatem voluptates perferendis vitae!</p>
+                <a href="#" class="cv">Download CV</a>
+            </div>
         </div>
+        <h2 class="h2services">Serviços</h2>
+        <p class="pservices">Proporcionamos uma melhor experiência</p>
         <div id="services">
-            <h2 class="h2services">Serviços</h2>
-            <p class="pservices">Proporcionamos uma melhor experiência</p>
-            <div class="design">
-                <h1 class="title1">85%</h1>
-                <h2 class="subtitle1">Design UI</h2>
-                <p class="p1">Photoshop, Illustrator</p>
-            </div>
-            <div class="design2">
-                <img src="imagens/imagem3.jpg" alt="eximagem3">
-                <h2 class="subtitle2">Design</h2>
-                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores quos odit maxime, enim minima?</p>
-                <a href="#" class="more2">Saiba mais</a>
+            <div id="design">
+                <div class="design1">
+                    <h1 class="title1">85%</h1>
+                    <h2 class="subtitle1">Design UI</h2>
+                    <p class="p1">Photoshop, Illustrator</p>
+                </div>
+                <div class="design2">
+                    <img src="imagens/imagem3.jpg" alt="eximagem3">
+                    <h2 class="subtitle2">Design</h2>
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores quos odit maxime, enim minima?</p>
+                    <a href="#" class="more2">Saiba mais</a>
+                </div>
             </div>
         </div>
+        <h2 class="porttext">Portfólio</h2>
+        <p class="portp">Meus trabalhos</p>
         <div id="portfolio">
-            <h2>Portfólio</h2>
-            <p>Meus trabalhos</p>
-            <img src="imagens/img1.jpg" alt="eximg1">
-            <img src="imagens/img2.png" alt="eximg2">
-            <img src="imagens/img3.jpg" alt="eximg3">
-            <img src="imagens/img4.jpg" alt="eximg4">cla
+            <ul id="templates">
+                <li id="github"><span>Github</span></li>
+                <li id="linkedin"><span>LinkedIn</span></li>
+                <li id="social"><span>Demais redes sociais</span></li>
+                <li id="website"><span>Website</span></li>
+            </ul>
         </div>
+        <h2 class="contacttext">Contato</h2>
+        <p class="pmesage">Envie sua mensagem</p>
         <div id="contact">
-
+            <form method="POST" id="fContact" action="mailto:wesleyzhongguo1@gmail.com">
+                <p><label for="cName"></label><input type="text" name="tName" class="formitem" size="70" maxlength="30" placeholder="Nome"></p>
+                <div class="items">
+                    <p><label for="cTel"></label> <input type="tel" name="tTel" class="cTel" size="31" maxlength="11" placeholder="Telefone"></p>
+                    <p><label for="cEmail"></label> <input type="email" name="tEmail" class="formitem" size="30" maxlength="30" placeholder="Email"></p>
+                </div>
+                <p><label for="cMsg"></label><textarea name="tMsg" class="formitem" cols=70" rows="5" placeholder="Mensagem"></textarea></p>
+            </form>
         </div>
     </main>
     <footer>
-
+        <p>&copy;WBR</p>
     </footer>
 </body>
 </html>
